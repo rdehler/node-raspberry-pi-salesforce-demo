@@ -1,8 +1,14 @@
+// reading files for uploading to attachments
 var fs = require('fs');
+// comparing two images
 var jimp = require('jimp');
+// env vars
 var dotenv = require('dotenv');
+// connecting to salesforce and creating records
 var jsforce = require('jsforce');
+// promise this is necessary...
 var Promise = require('promise');
+// executing camera commands
 var exec = require('child-process-promise').exec;
 
 dotenv.load();
